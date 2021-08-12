@@ -1,2 +1,2 @@
-# a-star
-this repo is for a-star
+# Snake Controller
+controlling snake with dirrent form of input
