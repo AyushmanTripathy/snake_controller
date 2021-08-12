@@ -3,10 +3,10 @@ $bg: #202124;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap");
 
-@mixin centered() {
+@mixin centered {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 body {
@@ -18,4 +18,8 @@ body {
   height: 100vh;
   width: 100vw;
   color: $sec;
+}
+
+canvas {
+  border: $sec 1px solid;
 }
