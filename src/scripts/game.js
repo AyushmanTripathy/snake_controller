@@ -1,5 +1,6 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
+const arrow = document.querySelector("img");
 
 let lastKeyPress;
 const size = 20;
@@ -48,18 +49,22 @@ function handleKeyCode(key) {
     //left
     case 37:
       (vel.x = -1), (vel.y = 0);
+      arrow.style = "transform: rotateY(180deg);";
       break;
     //up
     case 38:
       (vel.x = 0), (vel.y = -1);
+      arrow.style = "transform: rotateZ(270deg);";
       break;
     //rigth
     case 39:
       (vel.x = 1), (vel.y = 0);
+      arrow.style = "transform: rotateY(0deg);";
       break;
     //down
     case 40:
       (vel.x = 0), (vel.y = 1);
+      arrow.style = "transform: rotateZ(90deg);";
       break;
   }
 }

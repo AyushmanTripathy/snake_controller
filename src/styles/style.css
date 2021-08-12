@@ -9,6 +9,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #202124;
   font-family: "Roboto Mono", monospace;
   height: 100vh;
@@ -18,5 +22,9 @@ body {
 
 canvas {
   border: #bbb 1px solid;
+}
+
+img {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
